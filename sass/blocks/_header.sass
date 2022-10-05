@@ -1,1 +1,56 @@
-
+.header
+    background-color: #fff
+.header-top
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-top: 40px
+    padding-bottom: 40px
+.header__search
+    margin-right: auto
+    margin-left: 108px
+.search
+    display: flex
+    position: relative
+    overflow: hidden
+    border-radius: 6px
+    height: 40px
+.search__input
+    width: 350px
+    height: 100%
+    padding-left: 23px
+    background-color: #F5FAFE
+    border: none
+    font-size: 13px
+    line-height: 15px
+    color: $text-color
+    padding-right: 70px
+    &:focus
+        bottom: none
+        outline: none
+.search__button
+    position: absolute
+    width: 65px
+    height: 100%
+    border: none
+    right: 0
+    top: 0
+    background-color: $primary
+    display: flex
+    align-items: center
+    justify-content: center
+.user
+    display: flex
+    align-items: center
+    text-decoration: none
+.user__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+.user__name
+    color: $text-color
+    font-size: 14px
+    line-height: 18px
+    font-weight: 400
+    margin-left: 18px
