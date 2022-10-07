@@ -1,0 +1,64 @@
+.hotel
+    padding-top: 23px
+    padding-bottom: 70px
+.hotel-info
+    display: flex
+    align-items: center
+    justify-content: space-between
+.hotel-wrapper
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+.stars
+    flex-basis: 100%
+    margin-bottom: 4px
+.hotel-name
+    font-size: 24px
+    line-height: 30px
+    margin: 0
+.offer
+    font-size: 10px
+    line-height: 13px
+    padding: 4px 9px
+    background-color: $primary
+    border-radius: 3px
+    color: $white
+.hotel-info__offer
+    margin-left: 14px
+.hotel-description
+    font-size: 12px
+    line-height: 15px
+.hotel-info__description
+    margin: 5px 0
+.rating
+    padding: 9px 6px
+    border-radius: 4px
+    background-color: $primary
+    display: flex
+    align-items: center
+    flex-direction: column
+    color: $white
+.rating__text
+    font-size: 8px
+    line-height: 10px
+.rating__counter
+    font-size: 14px
+    line-height: 18px
+@media (max-width: 768px)
+    .hotel-info
+        justify-content: flex-start
+    .hotel-info__text
+        width: 100%
+    .hotel-wrapper
+        justify-content: space-between
+    .stars
+        flex-basis: content
+    .hotel-info__offer
+        order: -1
+        margin-left: 0
+    .hotel-name
+        flex-basis: 100%
+    .hotel-info__name
+        margin-top: 4px
+    .hotel-info__rating
+        display: none
