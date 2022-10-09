@@ -1,0 +1,107 @@
+.reviews
+    padding-top: 40px
+    padding-bottom: 70px
+.reviews__title
+    font-weight: 700
+    font-size: 36px
+    line-height: 45px
+    text-align: center
+    text-transform: uppercase
+    margin-bottom: 70px
+    margin-top: 0
+.reviews-slider__item
+    margin: auto
+    background-color: $white
+    position: relative
+    max-width: 730px
+    min-height: 280px
+    border-radius: 8px
+    padding-right: 60px
+    padding-left: 60px
+    padding-bottom: 30px
+    position: relative
+    margin-top: 45px
+.reviews-slider__profile
+    display: flex
+    flex-direction: column
+    align-items: center
+.reviews-slider__avatar
+    width: 90px
+    height: 90px
+    object-fit: cover
+    border-radius: 50%
+    margin-top: -45px
+    margin-bottom: 9px
+.reviews-slider__username
+    font-weight: 700
+    font-size: 12px
+    line-height: 15px
+    color: $primary
+    margin-bottom: 10px
+    margin-top: 0
+.reviews-slider__date
+    font-weight: 400
+    font-size: 10px
+    line-height: 13px
+    color: #000
+    margin-bottom: 5px
+.reviews-slider__rating
+    margin-bottom: 30px
+    font-weight: 400
+.reviews-slider__text
+    font-size: 12px
+    line-height: 19px
+    text-align: justify
+    margin: 0 auto
+    max-width: 535px
+.reviews-slider__button
+    background-color: transparent
+    width: 30px
+    height: 30px
+    position: absolute
+    z-index: 10
+    cursor: pointer
+    background-repeat: no-repeat
+    background-position: center
+.reviews-slider__button--prev
+    top: 50%
+    transform: translateY(-50%)
+    left: 0
+    background-image: url('../img/arrow-prev-darken.svg')
+.reviews-slider__button--next
+    top: 50%
+    transform: translateY(-50%)
+    right: 0
+    background-image: url('../img/arrow-next-darken.svg')
+@media (max-width: 992px)
+    .reviews
+        padding-bottom: 60px
+    .reviews__title
+        font-size: 30px
+        line-height: 38px
+        margin-bottom: 50px
+    .reviews-slider__item
+        max-width: 580px
+@media (max-width: 768px)
+    .reviews
+        padding-bottom: 50px
+    .reviews__title
+        font-size: 18px
+        line-height: 23px
+        margin-bottom: 40px
+    .reviews-slider__item
+        padding-right: 30px
+        padding-left: 30px
+        padding-bottom: 30px
+    .reviews-slider__button--prev
+        top: 31px
+        left: 50%
+        transform: translateY(0)
+        transform: translateX(-50%)
+        margin-left: -85px
+    .reviews-slider__button--next
+        top: 31px
+        right: 50%
+        transform: translateY(0)
+        transform: translateX(50%)
+        margin-right: -85px

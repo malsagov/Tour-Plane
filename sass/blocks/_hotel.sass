@@ -47,12 +47,13 @@
 .hotel-grid
     display: flex
     justify-content: space-between
-.swiper
+.hotel-slider
     width: 728px
     height: 450px
     position: relative
     border-radius: 8px
     margin: 0
+.hotel-slider__item
     &:after
         content: ''
         z-index: 10
@@ -62,7 +63,7 @@
         top: 0
         left: 0
         background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-.slider-button
+.hotel-slider__button
     position: absolute
     top: 50%
     transform: translateY(-50%)
@@ -75,10 +76,10 @@
     background-repeat: no-repeat
     background-position: center
     background-size: 10px
-.slider-button--next
+.hotel-slider__button--next
     right: 18px
     background-image: url('../img/arrow-next.svg')
-.slider-button--prev
+.hotel-slider__button--prev
     left: 18px
     background-image: url('../img/arrow-prev.svg')
 .hotel-right
@@ -159,19 +160,18 @@
     border-radius: 10px
     overflow: hidden
 @media (max-width: 1200px)
-    .swiper
+    .hotel-slider
         width: 590px
-    .swiper-slide__image
+    .hotel-slide__image
         height: 100%
         object-fit: cover
         width: 100%
 @media (max-width: 992px)
     .hotel-grid
         flex-direction: column
-    .swiper
+    .hotel-slider
         width: 100%
         height: 450px
-    .hotel__swiper
         margin-bottom: 30px
     .hotel-right
         flex-direction: row
@@ -197,7 +197,7 @@
         margin-top: 4px
     .hotel-info__rating
         display: none
-    .swiper
+    .hotel-slider
         height: 350px
         margin-bottom: 20px
     .hotel-right
@@ -208,5 +208,5 @@
     .map
         width: 100%
 @media (max-width: 576px)
-    .swiper
+    .hotel-slider
         height: 250px
