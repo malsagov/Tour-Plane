@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Tour Plan - Hotel Booking</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
         href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Nunito:wght@400;600;800&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
@@ -76,9 +76,7 @@
                 <li class="breadcrumb-list__item">
                     <a href="" class="breadcrumb-list__link">Flash Offers</a>
                 </li>
-                <li class="breadcrumb-list__item">
-                    Grand Hilton Hotel
-                </li>
+                <li class="breadcrumb-list__item">Grand Hilton Hotel</li>
             </ul>
         </div>
     </nav>
@@ -92,7 +90,8 @@
                         <span class="offer hotel-info__offer">Flash Offer</span>
                     </div>
                     <p class="hotel-description hotel-info__description">
-                        Half-Board / All Inclusive + Complimentary Activities + Child Stays Free
+                        Half-Board / All Inclusive + Complimentary Activities + Child
+                        Stays Free
                     </p>
                 </div>
                 <div class="rating hotel-info__rating">
@@ -102,29 +101,74 @@
             </div>
             <div class="hotel-grid">
                 <!-- Slider main container -->
-                <div class="swiper">
+                <div class="swiper hotel__swiper">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide">
-                            <img src="img/slide.jpg" alt="">
+                            <img class="swiper-slide__image" src="img/slide.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/slide.jpg" alt="">
+                            <img class="swiper-slide__image" src="img/slide.jpg" alt="" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="img/slide.jpg" alt="">
+                            <img class="swiper-slide__image" src="img/slide.jpg" alt="" />
                         </div>
-
                     </div>
-
 
                     <!-- If we need navigation buttons -->
                     <button class="slider-button slider-button--prev"></button>
                     <button class="slider-button slider-button--next"></button>
-
+                </div>
+                <div class="hotel-right">
+                    <div class="booking">
+                        <div class="booking__info">
+                            <div class="booking__price">
+                                <span class="booking__start">price starts as</span>
+                                <strong class="booking__pricetag">$ 8,500</strong>
+                                <span class="booking__per-room">per room / night</span>
+                            </div>
+                            <div class="booking__room">
+                                <div class="booking__text">
+                                    <img src="img/user-icon.svg" alt="" class="booking__icon" />
+                                    <span class="booking__description">2 x Guests</span>
+                                </div>
+                                <div class="booking__text">
+                                    <img src="img/home-icon.svg" alt="" class="booking__icon" />
+                                    <span class="booking__description">1 x Room</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="booking__call-center">
+                            <span class="booking__heading">Quick Booking</span>
+                            <a href="tel:12000" class="booking__number">
+                                <img src="img/phone-call.svg" alt="" class="booking__number-icon" />
+                                <span class="booking__num">12000</span>
+                            </a>
+                        </div>
+                        <button class="button booking__button">View Other Options</button>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3Af8380a91ddd0c9044c2161702bd67204d30dbad1276a9245abef50205d92b787&amp;source=constructor"
+                            width="100%" height="213" frameborder="0"></iframe>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="newsletter-wrapper">
+            <h2 class="newsletter-title">
+                subscribe to our
+                <span class="newsletter-title__strong">
+                    Newsletter
+                </span>
+            </h2>
+            <form action="#" class="subscribe newslatter__subscribe">
+                <input placeholder="Your email address" type="text" class="subscribe__input" />
+                <button class="subscribe__button">Send</button>
+            </form>
         </div>
     </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>

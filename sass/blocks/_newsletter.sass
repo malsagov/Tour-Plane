@@ -1,0 +1,97 @@
+.newsletter
+    padding: 98px 0 87px 0
+    background-image: url('../img/newsletter-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    position: relative
+    &::after
+        content: ''
+        position: absolute
+        left: 0
+        top: 0
+        background-color: rgba($dark, 0.8)
+        width: 100%
+        height: 100%
+        z-index: 1
+.newsletter-wrapper
+    width: 730px
+    margin: auto
+    display: flex
+    align-items: center
+    justify-content: space-between
+    z-index: 2
+    position: relative
+.newsletter-title
+    color: $white
+    font-weight: 300
+    font-size: 24px
+    line-height: 30px
+    margin-top: 0
+.newsletter-title__strong
+    display: block
+    font-weight: 600
+    font-size: 36px
+    line-height: 45px
+    text-transform: uppercase
+.subscribe
+    position: relative
+    width: 350px
+    height: 55px
+    border-radius: 4px
+    display: flex
+    align-items: center
+    border-radius: 4px
+    overflow: hidden
+.subscribe__input
+    position: absolute
+    border: none
+    width: 100%
+    height: 100%
+    padding-top: 20px
+    padding-bottom: 20px
+    padding-left: 30px
+    padding-right: 75px
+    background-color: $white
+    font-weight: 300
+    font-size: 14px
+    line-height: 18px
+    &::placeholder
+        color: #BDBDBD
+.subscribe__button
+    position: absolute
+    z-index: 10
+    right: 0
+    top: 0
+    width: 65px
+    height: 100%
+    border: none
+    background-color: $primary
+    color: $white
+    font-weight: 600
+    font-size: 12px
+    line-height: 15px
+    font-family: inherit
+@media (max-width: 992px)
+    .newsletter-wrapper
+        max-width: 700px
+@media (max-width: 768px)
+    .newsletter-wrapper
+        max-width: 576px
+        width: 92%
+        flex-direction: column
+        justify-content: flex-start
+        align-items: flex-start
+@media (max-width: 576px)
+    .newsletter
+        padding-top: 76px
+        padding-bottom: 83px
+    .newsletter-title
+        margin-bottom: 37px
+        font-size: 20px
+        line-height: 20px
+    .newsletter-title__strong
+        font-size: 30px
+        line-height: 38p
+    .subscribe
+        width: 100%
